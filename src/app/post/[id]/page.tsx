@@ -1,6 +1,8 @@
 import { client, type Post } from "~/app/_util/newt-client";
 import parse from 'html-react-parser';
 
+export const revalidate = 60
+
 interface Params {
   id: string;
 }
