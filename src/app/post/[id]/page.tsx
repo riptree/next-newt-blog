@@ -9,9 +9,9 @@ export default async function Page({ params }: { params: { id: string } }) {
   });
 
   return (
-    <div className="p-4">
-      <h1>{post.title}</h1>
-      <article className="prose prose-sm">{parse(post.body)}</article>
-    </div>
+    <article className="bg-white shadow rounded p-6 prose prose-sm">
+      <h1 className="text-4xl font-bold mb-6">{post.title}</h1>
+      {parse(post.body)}
+    </article>
   );
 }
